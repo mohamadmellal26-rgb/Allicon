@@ -1,0 +1,258 @@
+.icon-fonts-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 6rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow: hidden;
+}
+
+.icon-fonts-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* الجانب الأيسر */
+.icon-fonts-left {
+  flex: 1;
+  max-width: 540px;
+}
+
+.icon-fonts-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.icon-fonts-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 2.5rem;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.feature-icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: #e0f2fe;
+  color: #0284c7;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.3rem 0;
+}
+
+.feature-desc {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* الجانب الأيمن */
+.icon-fonts-right {
+  flex: 1.1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.visual-composite-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  height: 500px;
+}
+
+/* بطاقة Dashboard */
+.dashboard-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 92%;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 1.75rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f1f5f9;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-box {
+  border-radius: 16px;
+  padding: 1.1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-box.green { background-color: #e6fdf4; }
+.stat-box.blue { background-color: #eff6ff; }
+.stat-box.purple { background-color: #f3e8ff; }
+
+.stat-value {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 0.2rem;
+  font-weight: 500;
+}
+
+.dashboard-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.dashboard-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.home-icon-circle {
+  width: 28px;
+  height: 28px;
+  background-color: #f0f9ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-dot {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #0284c7;
+  border-radius: 2px;
+}
+
+/* الأعمدة البيانية */
+.chart-bars-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.85rem;
+  height: 90px;
+}
+
+.chart-bar {
+  flex: 1;
+  border-radius: 10px;
+}
+
+.blue-bar { height: 60%; background-color: #3b82f6; }
+.light-bar { height: 35%; background-color: #e2e8f0; }
+.purple-bar { height: 100%; background-color: #8b5cf6; }
+.green-bar { height: 65%; background-color: #10b981; }
+
+/* محرر الكود الداكن الداخلي */
+.code-editor-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 88%;
+  background-color: #0b1329;
+  border-radius: 20px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.editor-dots-bar {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.editor-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.editor-dot.red { background-color: #ef4444; }
+.editor-dot.yellow { background-color: #f59e0b; }
+.editor-dot.green { background-color: #10b981; }
+
+.code-content {
+  font-family: "Fira Code", Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #94a3b8;
+  white-space: pre-wrap;
+}
+
+.code-tag { color: #38bdf8; }
+.code-attr { color: #cbd5e1; }
+.code-str { color: #fde047; }
+
+/* التجاوب للشاشات الصغيرة */
+@media (max-width: 1024px) {
+  .icon-fonts-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .icon-fonts-left {
+    max-width: 100%;
+  }
+
+  .icon-fonts-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .visual-composite-container {
+    height: 480px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,265 @@
+.icons-page {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 3rem 0 5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.icons-page-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* 1. Hero Section */
+.icons-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-bottom: 4rem;
+}
+
+.icons-hero-left {
+  flex: 1;
+  max-width: 580px;
+}
+
+.icons-hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #0b1326;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.icons-hero-subtitle {
+  font-size: 1.15rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.popular-icons-btn {
+  background-color: #00ce7c; /* الأخضر النيون البارز المطابق للنموذج */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 206, 124, 0.3);
+}
+
+.popular-icons-btn:hover {
+  background-color: #00b36b;
+  transform: translateY(-2px);
+}
+
+.icons-hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-graphic-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 2. Search & Category Section */
+.icons-search-section {
+  margin-bottom: 3.5rem;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.icons-search-input {
+  flex: 1;
+  height: 54px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0 1.25rem;
+  font-size: 1.05rem;
+  color: #1f2937;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icons-search-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.icons-search-btn {
+  background-color: #2563eb; /* الأزرق المميز لزر البحث */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 2.25rem;
+  height: 54px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.icons-search-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Category Tags */
+.category-tags-list {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.category-tag-btn {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.5rem 1.35rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-tag-btn:hover {
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.category-tag-btn.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* 3. Icons Grid Section */
+.icons-grid-section {
+  width: 100%;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .icons-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .icons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.icon-card {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.25s ease, 
+              border-color 0.25s ease;
+}
+
+.icon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+  border-color: #e2e8f0;
+}
+
+.icon-img-box {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.icon-card:hover .icon-img {
+  transform: scale(1.1);
+}
+
+.icon-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.no-icons-found {
+  text-align: center;
+  padding: 4rem 0;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .icons-hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icons-hero-left {
+    max-width: 100%;
+  }
+
+  .icons-hero-right {
+    justify-content: center;
+  }
+
+  .search-bar-wrapper {
+    flex-direction: column;
+  }
+
+  .icons-search-btn {
+    width: 100%;
+  }
+}

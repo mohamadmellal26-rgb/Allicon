@@ -1,0 +1,142 @@
+.popular-styles-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 3rem 0 5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.popular-styles-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.popular-styles-header {
+  margin-bottom: 2rem;
+}
+
+.popular-styles-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0b1326;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.popular-styles-subtitle {
+  font-size: 1.05rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* شبكة البطاقات (3 أعمدة) */
+.popular-styles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .popular-styles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .popular-styles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* تصميم البطاقة الأساسية مع الخلفيات الملونة */
+.style-card {
+  border-radius: 24px;
+  padding: 2.5rem 1.75rem 1.75rem 1.75rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  min-height: 380px;
+}
+
+.style-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* درجات الألوان الخلفية المتطابقة مع التصميم */
+.style-card.gradient-blue {
+  background: linear-gradient(135deg, #0052ff 0%, #00c6ff 100%);
+}
+
+.style-card.gradient-orange {
+  background: linear-gradient(135deg, #ff8000 0%, #ffbb00 100%);
+}
+
+.style-card.gradient-light-blue {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+}
+
+.style-card.gradient-green {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+}
+
+.style-card.gradient-red {
+  background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+}
+
+.style-card.gradient-indigo {
+  background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);
+}
+
+/* البطاقة البيضاء الداخلية المتداخلة */
+.style-inner-white-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 1.75rem;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.style-card-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+/* شبكة الأيقونات (3 × 3) */
+.style-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.style-icon-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-icon-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.style-card:hover .style-icon-img {
+  transform: scale(1.12);
+}

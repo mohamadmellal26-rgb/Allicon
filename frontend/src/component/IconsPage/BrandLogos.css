@@ -1,0 +1,110 @@
+.brand-logos-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 4rem 0 5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.brand-logos-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* الترويسة */
+.brand-logos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.brand-logos-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0b1326;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.brand-logos-subtitle {
+  font-size: 1.05rem;
+  color: #4b5563;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* شبكة البطاقات العريضة والمتناسقة */
+.brand-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 960px) {
+  .brand-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .brand-logos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* تصميم البطاقات العريضة مع التكبير التفاعلي */
+.brand-card {
+  background-color: #f4f4f6; /* الرمادي الفاتح المميز للواجهة */
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  min-height: 200px;
+  border: 1px solid transparent;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.25s ease,
+              background-color 0.25s ease,
+              border-color 0.25s ease;
+  box-sizing: border-box;
+}
+
+/* تأجير تكبير الكرت والحركة عند المرور */
+.brand-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.brand-logo-box {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.brand-card:hover .brand-logo-img {
+  transform: scale(1.12);
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  letter-spacing: -0.01em;
+}

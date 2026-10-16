@@ -1,0 +1,245 @@
+.interface-icons-section {
+  width: 100%;
+  background: linear-gradient(135deg, #d2f8ee 0%, #c4f0f0 50%, #d8f3f8 100%); /* التدرج السماوي الفاتح المطابق للشاشة */
+  padding: 4.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow: hidden;
+}
+
+.interface-icons-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+
+/* القسم الأيسر */
+.interface-content-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.uicons-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0d1b2a;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.logo-bracket {
+  color: #0d1b2a;
+  font-weight: 800;
+}
+
+.interface-subtitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.interface-description {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* الأزرار */
+.interface-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.see-all-icons-btn {
+  background-color: #00ce7c; /* الأخضر المميز */
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 206, 124, 0.3);
+}
+
+.see-all-icons-btn:hover {
+  background-color: #00b36b;
+  transform: translateY(-2px);
+}
+
+.open-figma-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #111827;
+  color: #111827;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.open-figma-btn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.figma-btn-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* القسم الأيمن */
+.interface-preview-right {
+  flex: 1.3;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.preview-composite-box {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+/* نافذة محرر الكود */
+.code-editor-window {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 260px;
+  background-color: #0b1326;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.editor-dots {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green { background-color: #10b981; }
+
+.code-snippet {
+  font-family: "Fira Code", Monaco, Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.code-tag { color: #38bdf8; }
+.code-attr { color: #a7f3d0; }
+.code-str { color: #fde047; }
+
+/* لوحة الأيقونات البيضاء */
+.icons-floating-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 440px;
+  height: 310px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* بطاقة النجمة العائمة */
+.featured-star-card {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.star-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* شبكة الأيقونات الداخلية */
+.preview-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem 1rem;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2.5rem;
+}
+
+.preview-icons-grid img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.preview-icons-grid img:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}
+
+/* التجاوب للشاشات الصغيرة */
+@media (max-width: 1024px) {
+  .interface-icons-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .interface-content-left {
+    max-width: 100%;
+  }
+
+  .interface-preview-right {
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}

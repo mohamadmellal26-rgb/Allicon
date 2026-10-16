@@ -1,0 +1,103 @@
+.action-icons-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.action-icons-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* الترويسة */
+.action-icons-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.action-icons-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0b1326;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.025em;
+}
+
+.action-icons-subtitle {
+  font-size: 1.05rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* شبكة البطاقات الثلاث */
+.action-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .action-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* تصميم البطاقة الفردية */
+.action-card {
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 2.5rem 1.75rem 0 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.action-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0b1326;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* حاوية مشغل الفيديو */
+.video-media-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.action-media-video {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}

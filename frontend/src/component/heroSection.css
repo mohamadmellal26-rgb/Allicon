@@ -1,0 +1,134 @@
+.hero-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 3rem 0 2rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* شبكة البطاقات */
+.hero-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 4rem;
+}
+
+.hero-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2.25rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+.card-image-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.card-image-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #f0fdf4;
+  border: 3px solid #86efac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.4;
+  max-width: 230px;
+}
+
+/* التنسيق الأفقي للعنوان السفلي */
+.hero-bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.uicons-inline-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0b1326;
+  letter-spacing: -0.5px;
+}
+
+.uicons-inline-title .bracket {
+  color: #0d9488;
+}
+
+.hero-inline-main-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #1f2937;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.all-icons-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #065f46;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.all-icons-link:hover {
+  opacity: 0.8;
+}
+
+.hero-sub-description {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+}

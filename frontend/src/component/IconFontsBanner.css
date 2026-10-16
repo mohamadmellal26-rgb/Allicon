@@ -1,0 +1,201 @@
+.icon-fonts-banner-section {
+  width: 100%;
+  background-color: #f8fafc; /* خلفية رمادية فاتحة */
+  padding: 4rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow: hidden;
+}
+
+.banner-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  background-color: #f1f5f9; /* لون البنر الداخلي */
+  border-radius: 24px;
+  padding: 3.5rem 4rem;
+}
+
+/* النص والزر جهة اليسار */
+.banner-text-content {
+  flex: 1;
+  max-width: 520px;
+}
+
+.banner-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.banner-description {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.banner-description strong {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.see-more-btn {
+  display: inline-block;
+  background-color: #3bb77e; /* الأخضر المميز */
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 2.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(59, 183, 126, 0.3);
+}
+
+.see-more-btn:hover {
+  background-color: #2ea56c;
+  transform: translateY(-2px);
+}
+
+/* الجرافيك والرسم البياني جهة اليمين */
+.banner-graphics-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 320px;
+}
+
+/* نافذة محرر الكود */
+.code-editor-window {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 280px;
+  background-color: #0b1329;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.window-dots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 0.8rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green { background-color: #10b981; }
+
+.code-snippet {
+  margin: 0;
+  font-family: 'Fira Code', monospace, monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #94a3b8;
+}
+
+.code-tag { color: #38bdf8; }
+.code-attr { color: #818cf8; }
+.code-string { color: #4ade80; }
+
+/* بطاقة المعاينة البيضاء للأيقونات */
+.icons-preview-card {
+  position: relative;
+  width: 420px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+/* النجمة المتداخلة العائمة */
+.featured-star-card {
+  position: absolute;
+  top: -30px;
+  left: 40px;
+  background-color: #ffffff;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  z-index: 3;
+}
+
+.star-icon {
+  width: 42px;
+  height: 42px;
+}
+
+/* شبكة الأيقونات المصغرة */
+.icons-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+  padding-top: 2rem;
+}
+
+.mini-icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.mini-icon-item:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+@media (max-width: 1024px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem;
+  }
+
+  .banner-text-content {
+    max-width: 100%;
+  }
+
+  .banner-graphics-content {
+    width: 100%;
+    justify-content: center;
+  }
+}.banner-elements-image-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.banner-elements-img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  object-fit: contain;
+}

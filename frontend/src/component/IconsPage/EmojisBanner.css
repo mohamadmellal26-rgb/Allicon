@@ -1,0 +1,99 @@
+.emojis-banner-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow: hidden;
+}
+
+.emojis-banner-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* القسم الأيسر */
+.emojis-banner-left {
+  flex: 1;
+  max-width: 520px;
+}
+
+.emojis-banner-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0b1326;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.emojis-banner-desc {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 2.25rem;
+}
+
+.emojis-see-more-btn {
+  display: inline-block;
+  background-color: #00ce7c; /* الأخضر النيون البارز المطابق للتصميم */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.9rem 2.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 206, 124, 0.3);
+}
+
+.emojis-see-more-btn:hover {
+  background-color: #00b36b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 206, 124, 0.4);
+}
+
+/* القسم الأيمن (الرسوم التوضيحية) */
+.emojis-banner-right {
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.emojis-graphic-img {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.emojis-banner-section:hover .emojis-graphic-img {
+  transform: scale(1.02) rotate(-1deg);
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 1024px) {
+  .emojis-banner-container {
+    flex-direction: column;
+    text-align: left;
+    gap: 2.5rem;
+  }
+
+  .emojis-banner-left {
+    max-width: 100%;
+  }
+
+  .emojis-banner-title {
+    font-size: 2.25rem;
+  }
+
+  .emojis-banner-right {
+    width: 100%;
+    justify-content: center;
+  }
+}
